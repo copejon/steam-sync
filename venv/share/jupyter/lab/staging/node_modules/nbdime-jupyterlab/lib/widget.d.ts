@@ -1,0 +1,60 @@
+import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { ServerConnection } from '@jupyterlab/services';
+import { JSONObject } from '@lumino/coreutils';
+import { Message } from '@lumino/messaging';
+import { Widget, Panel } from '@lumino/widgets';
+export declare class NbdimeWidget extends Panel {
+    /**
+     *
+     */
+    constructor(options: NbdimeWidget.IOptions);
+    dispose(): void;
+    /**
+     * Handle `'activate-request'` messages.
+     */
+    protected onActivateRequest(msg: Message): void;
+    protected onData(data: JSONObject): Promise<void> | undefined;
+    protected onError(error: ServerConnection.NetworkError | ServerConnection.ResponseError): void;
+    readonly base: string;
+    readonly remote: string | undefined;
+    protected rendermime: IRenderMimeRegistry;
+    protected header: Widget;
+    protected scroller: Panel;
+}
+export declare namespace NbdimeWidget {
+    interface IOptions {
+        /**
+         * The base notebook path.
+         */
+        base: string;
+        /**
+         * The remote notebook path. If undefined, base will be diffed against git HEAD.
+         */
+        remote?: string;
+        /**
+         * A rendermime instance to use to render markdown/outputs.
+         */
+        rendermime: IRenderMimeRegistry;
+        /**
+         * If specified this will be use to represent the base file in the view.
+         *
+         * Defaults to the value of `base`.
+         *
+         * Note: The labels will be ignored for git diffs.
+         */
+        baseLabel?: string;
+        /**
+         * If specified this will be use to represent the remote file in the view.
+         *
+         * Defaults to the value of `remote`.
+         *
+         * Note: The labels will be ignored for git diffs.
+         */
+        remoteLabel?: string;
+        /**
+         * Whether to hide unchanged cells by default.
+         */
+        hideUnchanged?: boolean;
+    }
+}
+//# sourceMappingURL=widget.d.ts.map

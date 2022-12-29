@@ -1,0 +1,22 @@
+import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { Widget } from '@lumino/widgets';
+export declare function diffNotebook(args: {
+    readonly base: string;
+    readonly remote: string;
+    readonly rendermime: IRenderMimeRegistry;
+    hideUnchanged?: boolean;
+}): Widget;
+export declare function diffNotebookCheckpoint(args: {
+    readonly path: string;
+    readonly rendermime: IRenderMimeRegistry;
+    hideUnchanged?: boolean;
+}): Widget;
+export declare function diffNotebookGit(args: {
+    readonly path: string;
+    readonly rendermime: IRenderMimeRegistry;
+    hideUnchanged?: boolean;
+}): Widget;
+export declare function isNbInGit(args: {
+    readonly path: string;
+}): Promise<boolean>;
+//# sourceMappingURL=actions.d.ts.map

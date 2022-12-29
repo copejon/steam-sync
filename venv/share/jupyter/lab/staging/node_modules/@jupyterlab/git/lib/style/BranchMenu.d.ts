@@ -1,0 +1,10 @@
+export declare const nameClass: string;
+export declare const wrapperClass: string;
+export declare const filterWrapperClass: string;
+export declare const filterClass: string;
+export declare const filterInputClass: string;
+export declare const filterClearClass: string;
+export declare const newBranchButtonClass: string;
+export declare const listItemClass: string;
+export declare const activeListItemClass: string;
+export declare const listItemIconClass: string;

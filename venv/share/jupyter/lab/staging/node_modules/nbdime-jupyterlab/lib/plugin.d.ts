@@ -1,0 +1,28 @@
+import { JupyterFrontEndPlugin } from '@jupyterlab/application';
+import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { INotebookModel } from '@jupyterlab/notebook';
+import { NotebookPanel } from '@jupyterlab/notebook';
+import { CommandRegistry } from '@lumino/commands';
+import { IDisposable } from '@lumino/disposable';
+export declare class NBDiffExtension implements DocumentRegistry.IWidgetExtension<NotebookPanel, INotebookModel> {
+    /**
+     *
+     */
+    constructor(commands: CommandRegistry);
+    /**
+     * Create a new extension object.
+     */
+    createNew(nb: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>): IDisposable;
+    protected commands: CommandRegistry;
+}
+export declare namespace CommandIDs {
+    const diffNotebook = "nbdime:diff";
+    const diffNotebookGit = "nbdime:diff-git";
+    const diffNotebookCheckpoint = "nbdime:diff-checkpoint";
+}
+/**
+ * The notebook diff provider.
+ */
+declare const nbDiffProvider: JupyterFrontEndPlugin<void>;
+export default nbDiffProvider;
+//# sourceMappingURL=plugin.d.ts.map

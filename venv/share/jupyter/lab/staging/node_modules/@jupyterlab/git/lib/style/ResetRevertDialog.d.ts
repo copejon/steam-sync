@@ -1,0 +1,12 @@
+export declare const resetRevertDialogClass: string;
+export declare const closeButtonClass: string;
+export declare const titleWrapperClass: string;
+export declare const titleClass: string;
+export declare const contentWrapperClass: string;
+export declare const actionsWrapperClass: string;
+export declare const buttonClass: string;
+export declare const cancelButtonClass: string;
+export declare const submitButtonClass: string;
+export declare const commitFormClass: string;
+export declare const commitSummaryClass: string;
+export declare const commitDescriptionClass: string;

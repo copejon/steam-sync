@@ -1,0 +1,12 @@
+export declare const toolbarClass: string;
+export declare const toolbarNavClass: string;
+export declare const toolbarMenuWrapperClass: string;
+export declare const toolbarMenuButtonClass: string;
+export declare const toolbarMenuButtonEnabledClass: string;
+export declare const toolbarMenuButtonIconClass: string;
+export declare const toolbarMenuButtonTitleWrapperClass: string;
+export declare const toolbarMenuButtonTitleClass: string;
+export declare const toolbarMenuButtonSubtitleClass: string;
+export declare const toolbarButtonClass: string;
+export declare const spacer: string;
+export declare const badgeClass: string;

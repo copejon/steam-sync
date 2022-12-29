@@ -1,0 +1,15 @@
+"use strict";
+// Copyright (c) Jupyter Development Team.
+// Distributed under the terms of the Modified BSD License.
+Object.defineProperty(exports, "__esModule", { value: true });
+const plugin_1 = require("./plugin");
+require("nbdime/lib/common/collapsible.css");
+require("nbdime/lib/upstreaming/flexpanel.css");
+require("nbdime/lib/common/dragpanel.css");
+require("nbdime/lib/styles/variables.css");
+require("nbdime/lib/styles/common.css");
+require("nbdime/lib/styles/diff.css");
+require("nbdime/lib/styles/merge.css");
+require("../style/index.css");
+exports.default = plugin_1.default;
+//# sourceMappingURL=index.js.map

@@ -1,0 +1,2 @@
+export declare function urlRStrip(target: string): string;
+//# sourceMappingURL=utils.d.ts.map
