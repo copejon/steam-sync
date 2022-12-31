@@ -1,1 +1,4 @@
 venv
+.vscode
+.ipynb_checkpoints
+servertest.ini
